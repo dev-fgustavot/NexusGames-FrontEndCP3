@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - NEXUS GAMER | Fale Conosco</title>
+  <meta name="description" content="Entre em contato com a Nexus Gamer. Suporte técnico, vendas e parcerias.">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">NEXUS</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        <li><a href="portfolio.html" class="nav-cta">🛒 Loja</a></li>
+      </ul>
+      
+      <button class="mobile-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO CONTATO -->
+  <section class="about-hero">
+    <div class="about-content fade-in">
+      <span class="section-tag">FALE CONOSCO</span>
+      <h1>Estamos aqui para <span class="glow-text">ajudar</span></h1>
+      <p style="color: #9ca3af; font-size: 1.125rem; max-width: 600px; margin: 1.5rem auto 0;">
+        Tem dúvida sobre algum produto? Quer montar um PC personalizado? 
+        Nossa equipe de especialistas está pronta para atender você.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CONTATO -->
+  <section class="section" style="padding-top: 0;">
+    <div class="contact-container">
+      <!-- INFO DE CONTATO -->
+      <div class="contact-info">
+        <div class="contact-card fade-in">
+          <div class="contact-card-header">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h3 style="font-size: 1rem; color: white;">Telefone</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem;">Seg a Sex, 9h às 18h</p>
+            </div>
+          </div>
+          <p style="color: white; font-size: 1.25rem; font-weight: 700;">(11) 99999-9999</p>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-card-header">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h3 style="font-size: 1rem; color: white;">E-mail</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem;">Respondemos em até 2h</p>
+            </div>
+          </div>
+          <p style="color: white; font-size: 1.25rem; font-weight: 700;">contato@nexusgamer.com.br</p>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-card-header">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h3 style="font-size: 1rem; color: white;">Endereço</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem;">Visite nosso showroom</p>
+            </div>
+          </div>
+          <p style="color: white; font-size: 1rem;">Rua dos Gamers, 420 - Sala 100<br>Vila Madalena, São Paulo - SP<br>CEP: 05428-000</p>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-card-header">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h3 style="font-size: 1rem; color: white;">Redes Sociais</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem;">Siga-nos e fique por dentro</p>
+            </div>
+          </div>
+          <div class="social-links" style="margin-top: 0.5rem;">
+            <a href="#" class="social-link">💬</a>
+            <a href="#" class="social-link">📸</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">🎮</a>
+            <a href="#" class="social-link">𝕏</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FORMULÁRIO -->
+      <div class="contact-form-container fade-in">
+        <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Envie sua mensagem</h2>
+        <p style="color: #9ca3af; margin-bottom: 2rem;">Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+        
+        <form id="contactForm" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(11) 99999-9999">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" class="form-input" required>
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option value="orcamento">Orçamento de PC Gamer</option>
+                <option value="suporte">Suporte Técnico</option>
+                <option value="troca">Troca ou Devolução</option>
+                <option value="parceria">Parceria Comercial</option>
+                <option value="outro">Outro Assunto</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="descricao">Mensagem *</label>
+            <textarea id="descricao" name="descricao" class="form-textarea" placeholder="Descreva como podemos te ajudar..." required></textarea>
+          </div>
+          
+          <div style="display: flex; gap: 1rem; align-items: center;">
+            <button type="submit" class="btn btn-primary" style="flex: 1; justify-content: center;">
+              <span>Enviar Mensagem</span>
+              <span>🚀</span>
+            </button>
+          </div>
+          
+          <p style="color: #9ca3af; font-size: 0.8rem; margin-top: 1rem; text-align: center;">
+            * Campos obrigatórios. Seus dados estão protegidos e não serão compartilhados.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="section" style="padding-top: 0;">
+    <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(139,92,246,0.3); box-shadow: 0 10px 40px rgba(0,0,0,0.5);" class="fade-in">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.142838905!2d-46.69609828502!3d-23.563955984597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576d89538417%3A0xd54a90463e4c643!2sVila+Madalena!5e0!3m2!1spt-BR!2sbr!4v1634000000000!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="400" 
+        style="border:0; filter: grayscale(0.7) invert(0.92) contrast(0.9) brightness(0.7) hue-rotate(180deg);" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Localização da Nexus Gamer">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-header fade-in">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Perguntas frequentes</h2>
+    </div>
+    
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="faq-item fade-in" style="background: rgba(26,26,36,0.5); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer;">
+        <div style="display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-arrow').style.transform = this.querySelector('.faq-answer').style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';">
+          <h3 style="font-size: 1.125rem; color: white;">Qual o prazo de entrega?</h3>
+          <span class="faq-arrow" style="font-size: 1.5rem; transition: transform 0.3s; color: var(--primary);">▼</span>
+        </div>
+        <div class="faq-answer" style="display: none; color: #9ca3af; margin-top: 1rem; line-height: 1.7;">
+          Para São Paulo capital, entregamos em 24h. Para demais capitais, de 2 a 5 dias úteis. Para interior, de 5 a 10 dias úteis. Frete grátis para compras acima de R$ 500.
+        </div>
+      </div>
+      
+      <div class="faq-item fade-in" style="background: rgba(26,26,36,0.5); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer;">
+        <div style="display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-arrow').style.transform = this.querySelector('.faq-answer').style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';">
+          <h3 style="font-size: 1.125rem; color: white;">Vocês montam PC por encomenda?</h3>
+          <span class="faq-arrow" style="font-size: 1.5rem; transition: transform 0.3s; color: var(--primary);">▼</span>
+        </div>
+        <div class="faq-answer" style="display: none; color: #9ca3af; margin-top: 1rem; line-height: 1.7;">
+          Sim! Temos um configurador online onde você escolhe cada componente. Além disso, nossos especialistas podem te ajudar a montar o setup ideal para o seu tipo de jogo e orçamento.
+        </div>
+      </div>
+      
+      <div class="faq-item fade-in" style="background: rgba(26,26,36,0.5); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer;">
+        <div style="display: flex; justify-content: space-between; align-items: center;" onclick="this.parentElement.querySelector('.faq-answer').style.display = this.parentElement.querySelector('.faq-answer').style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-arrow').style.transform = this.querySelector('.faq-answer').style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';">
+          <h3 style="font-size: 1.125rem; color: white;">Qual a garantia dos produtos?</h3>
+          <span class="faq-arrow" style="font-size: 1.5rem; transition: transform 0.3s; color: var(--primary);">▼</span>
+        </div>
+        <div class="faq-answer" style="display: none; color: #9ca3af; margin-top: 1rem; line-height: 1.7;">
+          Todos os produtos têm garantia mínima de 1 ano. PCs montados pela Nexus têm garantia estendida de 3 anos, incluindo mão de obra e suporte técnico gratuito.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <span class="logo-text">NEXUS</span>
+          </a>
+          <p class="footer-description">
+            A loja gamer mais insana do Brasil. Hardware de ponta, atendimento de verdade.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">💬</a>
+            <a href="#" class="social-link">📸</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">🎮</a>
+            <a href="#" class="social-link">𝕏</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Loja</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">PCs Gamer</a></li>
+            <li><a href="portfolio.html">Periféricos</a></li>
+            <li><a href="portfolio.html">Monitores</a></li>
+            <li><a href="portfolio.html">Cadeiras</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5511999999999">📞 (11) 99999-9999</a></li>
+            <li><a href="mailto:contato@nexusgamer.com.br">✉️ contato@nexusgamer.com.br</a></li>
+            <li><a href="#">📍 São Paulo - SP</a></li>
+            <li><a href="#">💬 WhatsApp 24h</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span class="current-year">2024</span> Nexus Gamer. Todos os direitos reservados. FIAP - Engenharia de Software.
+        </p>
+        <div class="footer-badges">
+          <span style="color: #9ca3af; font-size: 0.875rem;"> Site Seguro</span>
+          <span style="color: #9ca3af; font-size: 0.875rem;">⚡ Entrega Rápida</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js" type="module"></script>
+</body>
+</html>
