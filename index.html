@@ -1,62 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NexusPlay - Sua Loja Gamer definitiva. Equipamentos, periféricos e acessórios gamer de alta performance.">
-    <meta name="keywords" content="loja gamer, periféricos, setup gamer, teclado mecânico, mouse gamer, headset">
-    <meta name="author" content="FIAP - Engenharia de Software">
-    <title>NexusPlay | Loja Gamer - Home</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS GAMER - Loja Gamer Premium | Hardware, Periféricos e Setups</title>
+  <meta name="description" content="A loja gamer definitiva. PCs montados, hardware de ponta, periféricos RGB e tudo para seu setup dos sonhos.">
+  <link rel="stylesheet" href="src/css/estilo.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">NEXUS</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/portfolio.html" class="nav-link">Portfólio</a></li>
+        <li><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="pages/contato.html" class="nav-link">Contato</a></li>
+        <li><a href="pages/portfolio.html" class="nav-cta">🛒 Loja</a></li>
+      </ul>
+      
+      <button class="mobile-toggle">☰</button>
+    </nav>
+  </header>
 
-    <!-- ========== HEADER / NAVEGAÇÃO ========== -->
-    <header class="header" id="header">
-        <div class="container header__container">
-            <!-- Logo -->
-            <a href="index.html" class="header__logo">
-                <i class="fas fa-gamepad logo-icon"></i>
-                <span class="logo-text">Nexus<span class="logo-accent">Play</span></span>
-            </a>
-
-            <!-- Navegação Principal -->
-            <nav class="header__nav" id="navbar">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active">
-                            <i class="fas fa-home"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="pages/portifolio.html" class="nav__link">
-                            <i class="fas fa-store"></i> Portifólio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="pages/sobre.html" class="nav__link">
-                            <i class="fas fa-info-circle"></i> Sobre
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="pages/contato.html" class="nav__link">
-                            <i class="fas fa-envelope"></i> Contato
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Botão Menu Mobile -->
-            <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-            </button>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>1.247 gamers online</span>
+          </div>
+          <div class="badge">
+            <span>⚡</span>
+            <span>Entrega em 24h</span>
+          </div>
         </div>
-    </header>
+        
+        <h1>
+          Eleve seu jogo ao <span class="glow-text">próximo nível</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Hardware de elite, periféricos RGB e PCs montados por especialistas. 
+          A experiência gamer definitiva começa aqui.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="pages/portfolio.html" class="btn btn-primary">
+            <span>Explorar Produtos</span>
+            <span>→</span>
+          </a>
+          <a href="#features" class="btn btn-secondary">
+            <span>Ver Diferenciais</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <img src="" 
+               alt="Setup Gamer RGB" 
+               class="hero-image">
+          <div class="hero-image-overlay"></div>
+        </div>
+        
+        <div class="floating-card card-1">
+          <div style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 0.25rem;">FPS BOOST</div>
+          <div style="font-weight: 700; font-size: 1.5rem; background: linear-gradient(135deg, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">+240%</div>
+        </div>
+        
+        <div class="floating-card card-2">
+          <div style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 0.25rem;">Clientes</div>
+          <div style="font-weight: 700; font-size: 1.5rem; color: white;" data-target="15420">0</div>
+        </div>
+        
+        <div class="floating-card card-3">
+          <div style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 0.25rem;">Avaliação</div>
+          <div style="font-weight: 700; font-size: 1.25rem; color: #f59e0b;">★★★★★ 4.9</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="section-header fade-in">
+      <span class="section-tag">Por que escolher a Nexus</span>
+      <h2 class="section-title">Feito por gamers, para gamers</h2>
+      <p class="section-description">
+        Não somos apenas uma loja. Somos sua equipe de suporte técnico, seu consultor de setup e seu parceiro na vitória.
+      </p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title">Performance Extrema</h3>
+        <p class="feature-description">
+          Componentes selecionados a dedo e testados em jogos reais. Garantimos o máximo FPS em 4K com Ray Tracing.
+        </p>
+      </div>
+      
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🎨</div>
+        <h3 class="feature-title">RGB Sync Total</h3>
+        <p class="feature-description">
+          Iluminação sincronizada em todo o setup. Compatível com Aura Sync, Mystic Light e iCUE.
+        </p>
+      </div>
+      
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🛠️</div>
+        <h3 class="feature-title">Montagem Profissional</h3>
+        <p class="feature-description">
+          Cable management perfeito, testes de stress de 72h e garantia estendida de 3 anos.
+        </p>
+      </div>
+      
+      <div class="feature-card fade-in">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Entrega Relâmpago</h3>
+        <p class="feature-description">
+          SP Capital em 24h. Frete grátis acima de R$ 500. Embalagem anti-impacto garantida.
+        </p>
+      </div>
+      
+      <div class="feature-card fade-in">
+        <div class="feature-icon">💬</div>
+        <h3 class="feature-title">Suporte 24/7</h3>
+        <p class="feature-description">
+          Discord exclusivo, WhatsApp direto com técnicos e tutoriais personalizados.
+        </p>
+      </div>
+      
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🏆</div>
+        <h3 class="feature-title">Clube VIP</h3>
+        <p class="feature-description">
+          Descontos exclusivos, acesso antecipado a lançamentos e cashback em toda compra.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS DESTAQUE -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="section-header fade-in">
+      <span class="section-tag">Mais Vendidos</span>
+      <h2 class="section-title">Setups que dominam</h2>
+    </div>
+    
+    <div class="products-grid">
+      <article class="product-card fade-in" data-category="pc">
+        <span class="product-badge">-15%</span>
+          <img src="" 
+             alt="PC Gamer" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PC COMPLETO</div>
+          <h3 class="product-name">VORTEX Titan RTX 5080 Ultra</h3>
+          <p class="product-description">Nexon Z9 9900X3D, 64GB TurboRAM DDR5, 2TB NovaDrive Gen5</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 11.999</span>
+              <span class="price-current">R$ 10.199</span>
+            </div>
+            <button class="btn-add" title="Adicionar ao carrinho">+</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="product-card fade-in" data-category="perifericos">
+        <span class="product-badge">NOVO</span>
+          <img src="" 
+             alt="Teclado Mecânico" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PERIFÉRICO</div>
+          <h3 class="product-name">Teclado Stryke Pro TKL</h3>
+          <p class="product-description">Switch OmniPoint 2.0, RGB por tecla, USB-C</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-current">R$ 1.299</span>
+            </div>
+            <button class="btn-add" title="Adicionar ao carrinho">+</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="product-card fade-in" data-category="monitor">
+          <img src="" 
+             alt="Monitor Gamer" class="product-image">
+        <div class="product-content">
+          <div class="product-category">MONITOR</div>
+          <h3 class="product-name">Horizon X9 32" 280Hz</h3>
+          <p class="product-description">Curvo 1000R, QHD, 1ms, HDR600</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 3.499</span>
+              <span class="price-current">R$ 2.899</span>
+            </div>
+            <button class="btn-add" title="Adicionar ao carrinho">+</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="product-card fade-in" data-category="cadeira">
+        <span class="product-badge">-20%</span>
+          <img src="" 
+             alt="Cadeira Gamer" class="product-image">
+        <div class="product-content">
+          <div class="product-category">CADEIRA</div>
+          <h3 class="product-name">Ironthrone Apex Evo 2025</h3>
+          <p class="product-description">Couro híbrido, suporte lombar 4D</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 2.999</span>
+              <span class="price-current">R$ 2.399</span>
+            </div>
+            <button class="btn-add" title="Adicionar ao carrinho">+</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="pages/portfolio.html" class="btn btn-primary">
+        Ver Catálogo Completo
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section">
+    <div style="background: rgba(26, 26, 36, 0.8); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 24px; padding: 4rem 2rem; text-align: center; backdrop-filter: blur(20px); position: relative; overflow: hidden;">
+      <div style="position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(139, 92, 246, 0.2) 0%, transparent 70%); pointer-events: none;"></div>
+      <div style="position: relative; z-index: 1;">
+        <h2 style="margin-bottom: 1rem;">Pronto para dominar?</h2>
+        <p style="color: #9ca3af; font-size: 1.125rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Junte-se a mais de 15 mil gamers que escolheram a Nexus. Monte seu setup dos sonhos hoje.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="pages/contato.html" class="btn btn-primary">Falar com Especialista</a>
+          <a href="pages/sobre.html" class="btn btn-secondary">Nossa História</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <span class="logo-text">NEXUS</span>
+          </a>
+          <p class="footer-description">
+            A loja gamer mais insana do Brasil. Hardware de ponta, atendimento de verdade e entrega que não te deixa na mão.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Discord">💬</a>
+            <a href="#" class="social-link" title="Instagram">📸</a>
+            <a href="#" class="social-link" title="YouTube">▶️</a>
+            <a href="#" class="social-link" title="Twitch">🎮</a>
+            <a href="#" class="social-link" title="Twitter">𝕏</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Loja</h4>
+          <ul class="footer-links">
+            <li><a href="pages/portfolio.html">PCs Gamer</a></li>
+            <li><a href="pages/portfolio.html">Periféricos</a></li>
+            <li><a href="pages/portfolio.html">Monitores</a></li>
+            <li><a href="pages/portfolio.html">Cadeiras</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="pages/sobre.html">Sobre Nós</a></li>
+            <li><a href="pages/contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5511999999999">📞 (11) 99999-9999</a></li>
+            <li><a href="mailto:contato@nexusgamer.com.br">✉️ contato@nexusgamer.com.br</a></li>
+            <li><a href="#">📍 São Paulo - SP</a></li>
+            <li><a href="#">💬 WhatsApp 24h</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span class="current-year">2026</span> Nexus Gamer. Todos os direitos reservados. FIAP - Engenharia de Software.
+        </p>
+        <div class="footer-badges">
+          <span style="color: #9ca3af; font-size: 0.875rem;">🔒 Site Seguro</span>
+          <span style="color: #9ca3af; font-size: 0.875rem;">⚡ Entrega Rápida</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/script.js" type="module"></script>
+</body>
+</html>
