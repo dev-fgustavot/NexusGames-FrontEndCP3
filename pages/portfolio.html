@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - NEXUS GAMER | Produtos e Promoções</title>
+  <meta name="description" content="Explore nosso catálogo completo de PCs gamer, periféricos, monitores e acessórios com os melhores preços.">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">NEXUS</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfólio</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li><a href="#" class="nav-cta">🛒 Loja</a></li>
+      </ul>
+      
+      <button class="mobile-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO PORTFÓLIO -->
+  <section class="about-hero" style="padding-bottom: 2rem;">
+    <div class="about-content">
+      <span class="section-tag">CATÁLOGO COMPLETO</span>
+      <h1>Arsenal <span class="glow-text">Gamer</span></h1>
+      <p style="color: #9ca3af; font-size: 1.125rem; max-width: 700px; margin: 1.5rem auto 0;">
+        Mais de 500 produtos curados por especialistas. Do entry-level ao setup profissional de eSports.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTROS E BUSCA -->
+  <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="filter-btn active" data-filter="all" style="background: linear-gradient(135deg, #8b5cf6, #06b6d4); color: white; border: none; padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Todos</button>
+          <button class="filter-btn" data-filter="pc" style="background: rgba(255,255,255,0.05); color: #9ca3af; border: 1px solid rgba(255,255,255,0.1); padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s;">PCs</button>
+          <button class="filter-btn" data-filter="perifericos" style="background: rgba(255,255,255,0.05); color: #9ca3af; border: 1px solid rgba(255,255,255,0.1); padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Periféricos</button>
+          <button class="filter-btn" data-filter="monitor" style="background: rgba(255,255,255,0.05); color: #9ca3af; border: 1px solid rgba(255,255,255,0.1); padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Monitores</button>
+          <button class="filter-btn" data-filter="cadeira" style="background: rgba(255,255,255,0.05); color: #9ca3af; border: 1px solid rgba(255,255,255,0.1); padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Cadeiras</button>
+        </div>
+        
+        <div style="position: relative; min-width: 280px;">
+          <input type="text" id="searchProducts" placeholder="Buscar produto..." style="width: 100%; background: rgba(15,15,20,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; padding: 0.6rem 1.25rem 0.6rem 2.5rem; color: white; font-size: 0.9rem;">
+          <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af;">🔍</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID DE PRODUTOS -->
+  <section class="section" style="padding-top: 0;">
+    <div class="products-grid">
+      <!-- PC 1 -->
+      <article class="product-card fade-in" data-category="pc">
+        <span class="product-badge">TOP VENDA</span>
+        <img src="../src/assets/imgs/pc-gamer.jpg" alt="PC Gamer" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PC COMPLETO</div>
+          <h3 class="product-name">VORTEX Titan</h3>
+          <p class="product-description">Nexon Z9 9900X3D • 64GB TurboRAM DDR5 • 2TB NovaDrive Gen5</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 11.999</span>
+              <span class="price-current">R$ 10.199</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PC 2 -->
+      <article class="product-card fade-in" data-category="pc">
+        <span class="product-badge">-22%</span>
+        <img src="../src/assets/imgs/pcgamer2.png" alt="PC Gamer" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PC COMPLETO</div>
+          <h3 class="product-name">NEXUS Phantom X</h3>
+          <p class="product-description">Aether i9-15900KF • 32GB QuantumRAM DDR5 • 1TB HyperVault Gen5</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 24.999</span>
+              <span class="price-current">R$ 19.499</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Periférico 1 -->
+      <article class="product-card fade-in" data-category="perifericos">
+        <span class="product-badge">NOVO</span>
+        <img src="../src/assets/imgs/teclado.jpg" alt="Teclado" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PERIFÉRICO</div>
+          <h3 class="product-name">Teclado Stryke Pro TKL</h3>
+          <p class="product-description">Switch OmniPoint 2.0 ajustável • RGB PrismSync • USB-C</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-current">R$ 1.299</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Periférico 2 -->
+      <article class="product-card fade-in" data-category="perifericos">
+        <img src="../src/assets/imgs/headset.jpg" alt="Mouse" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PERIFÉRICO</div>
+          <h3 class="product-name">EchoStorm Pro</h3>
+          <p class="product-description">7.1 Surround • HyperBass Drivers</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 899</span>
+              <span class="price-current">R$ 749</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Monitor 1 -->
+      <article class="product-card fade-in" data-category="monitor">
+        <span class="product-badge">-17%</span>
+        <img src="../src/assets/imgs/monitor.jpg" alt="Monitor" class="product-image">
+        <div class="product-content">
+          <div class="product-category">MONITOR</div>
+          <h3 class="product-name">Horizon X9 32" 280Hz</h3>
+          <p class="product-description">QHD 240Hz • 1ms • Curvo 1000R • HDR600 • G-Sync</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 3.499</span>
+              <span class="price-current">R$ 2.899</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Monitor 2 -->
+      <article class="product-card fade-in" data-category="monitor">
+        <img src="../src/assets/imgs/monitor2.png" alt="Monitor" class="product-image">
+        <div class="product-content">
+          <div class="product-category">MONITOR</div>
+          <h3 class="product-name">NebulaView QHD Pro</h3>
+          <p class="product-description">27" • 240Hz • IPS NanoGlow</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-current">R$ 5.999</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cadeira 1 -->
+      <article class="product-card fade-in" data-category="cadeira">
+        <span class="product-badge">-20%</span>
+        <img src="../public/cadeira-gamer.jpg" alt="Cadeira" class="product-image">
+        <div class="product-content">
+          <div class="product-category">CADEIRA</div>
+          <h3 class="product-name">Secretlab Titan Evo 2024</h3>
+          <p class="product-description">Couro híbrido • Suporte lombar 4D • Reclina 165° • 5 anos garantia</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-old">R$ 2.999</span>
+              <span class="price-current">R$ 2.399</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Periférico 3 -->
+      <article class="product-card fade-in" data-category="perifericos">
+        <span class="product-badge">BEST</span>
+        <img src="https://images.pexels.com/photos/9794458/pexels-photo-9794458.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Headset" class="product-image">
+        <div class="product-content">
+          <div class="product-category">PERIFÉRICO</div>
+          <h3 class="product-name">HyperX Cloud Alpha Wireless</h3>
+          <p class="product-description">300h bateria • Drivers 50mm • DTS Spatial • Microfone destacável</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-current">R$ 899</span>
+            </div>
+            <button class="btn-add">+</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TABELA DE PREÇOS E PROMOÇÕES -->
+  <section class="section pricing-section">
+    <div class="section-header fade-in">
+      <span class="section-tag">PROMOÇÕES RELÂMPAGO</span>
+      <h2 class="section-title">Ofertas da Semana</h2>
+      <p class="section-description">Preços atualizados em tempo real. Estoque limitado!</p>
+    </div>
+    
+    <div class="pricing-table-container fade-in">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Preço Original</th>
+            <th>Desconto</th>
+            <th>Preço Final</th>
+            <th>Estoque</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="product-cell">
+                <img src="https://images.pexels.com/photos/7858742/pexels-photo-7858742.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" class="product-thumb">
+                <div>
+                  <div style="font-weight: 600; color: white;">RTX 4080 Super</div>
+                  <div style="font-size: 0.8rem; color: #9ca3af;">MSI Gaming X Trio</div>
+                </div>
+              </div>
+            </td>
+            <td>GPU</td>
+            <td style="text-decoration: line-through; color: #9ca3af;">R$ 7.999</td>
+            <td><span class="discount-badge">-18%</span></td>
+            <td style="font-weight: 700; color: #8b5cf6; font-size: 1.1rem;">R$ 6.559</td>
+            <td><span class="stock-high">● Em estoque</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-cell">
+                <img src="https://images.pexels.com/photos/7199194/pexels-photo-7199194.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" class="product-thumb">
+                <div>
+                  <div style="font-weight: 600; color: white;">Ryzen 7 7800X3D</div>
+                  <div style="font-size: 0.8rem; color: #9ca3af;">AMD AM5</div>
+                </div>
+              </div>
+            </td>
+            <td>CPU</td>
+            <td style="text-decoration: line-through; color: #9ca3af;">R$ 2.899</td>
+            <td><span class="discount-badge">-12%</span></td>
+            <td style="font-weight: 700; color: #8b5cf6; font-size: 1.1rem;">R$ 2.551</td>
+            <td><span class="stock-medium">● Últimas 8</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-cell">
+                <img src="https://images.pexels.com/photos/9128853/pexels-photo-9128853.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" class="product-thumb">
+                <div>
+                  <div style="font-weight: 600; color: white;">SSD 2TB NVMe Gen4</div>
+                  <div style="font-size: 0.8rem; color: #9ca3af;">Samsung 990 Pro</div>
+                </div>
+              </div>
+            </td>
+            <td>Storage</td>
+            <td style="text-decoration: line-through; color: #9ca3af;">R$ 1.299</td>
+            <td><span class="discount-badge">-25%</span></td>
+            <td style="font-weight: 700; color: #8b5cf6; font-size: 1.1rem;">R$ 974</td>
+            <td><span class="stock-high">● Em estoque</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-cell">
+                <img src="https://images.pexels.com/photos/33050959/pexels-photo-33050959.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" class="product-thumb">
+                <div>
+                  <div style="font-weight: 600; color: white;">32GB DDR5 6000MHz</div>
+                  <div style="font-size: 0.8rem; color: #9ca3af;">Corsair Vengeance RGB</div>
+                </div>
+              </div>
+            </td>
+            <td>RAM</td>
+            <td style="text-decoration: line-through; color: #9ca3af;">R$ 1.199</td>
+            <td><span class="discount-badge">-15%</span></td>
+            <td style="font-weight: 700; color: #8b5cf6; font-size: 1.1rem;">R$ 1.019</td>
+            <td><span class="stock-low">● Últimas 3</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-cell">
+                <img src="https://images.pexels.com/photos/9072216/pexels-photo-9072216.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" class="product-thumb">
+                <div>
+                  <div style="font-weight: 600; color: white;">Water Cooler 360mm</div>
+                  <div style="font-size: 0.8rem; color: #9ca3af;">NZXT Kraken Elite</div>
+                </div>
+              </div>
+            </td>
+            <td>Cooling</td>
+            <td style="text-decoration: line-through; color: #9ca3af;">R$ 1.599</td>
+            <td><span class="discount-badge">-30%</span></td>
+            <td style="font-weight: 700; color: #8b5cf6; font-size: 1.1rem;">R$ 1.119</td>
+            <td><span class="stock-high">● Em estoque</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: rgba(236, 72, 153, 0.1); border: 1px solid rgba(236, 72, 153, 0.3); border-radius: 16px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <p style="color: #f9fafb; font-weight: 600; margin-bottom: 0.5rem;">🔥 PROMOÇÃO ACABA EM: <span id="countdown" style="color: #ec4899; font-family: 'Orbitron', monospace;">23:47:12</span></p>
+      <p style="color: #9ca3af; font-size: 0.9rem;">Frete grátis para todo Brasil em compras acima de R$ 500</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <span class="logo-text">NEXUS</span>
+          </a>
+          <p class="footer-description">
+            A loja gamer mais insana do Brasil. Hardware de ponta, atendimento de verdade.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">💬</a>
+            <a href="#" class="social-link">📸</a>
+            <a href="#" class="social-link">▶️</a>
+            <a href="#" class="social-link">🎮</a>
+            <a href="#" class="social-link">𝕏</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Loja</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">PCs Gamer</a></li>
+            <li><a href="portfolio.html">Periféricos</a></li>
+            <li><a href="portfolio.html">Monitores</a></li>
+            <li><a href="portfolio.html">Cadeiras</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5511999999999">📞 (11) 99999-9999</a></li>
+            <li><a href="mailto:contato@nexusgamer.com.br">✉️ contato@nexusgamer.com.br</a></li>
+            <li><a href="#">📍 São Paulo - SP</a></li>
+            <li><a href="#">💬 WhatsApp 24h</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span class="current-year">2024</span> Nexus Gamer. Todos os direitos reservados. FIAP - Engenharia de Software.
+        </p>
+        <div class="footer-badges">
+          <span style="color: #9ca3af; font-size: 0.875rem;">🔒 Site Seguro</span>
+          <span style="color: #9ca3af; font-size: 0.875rem;">⚡ Entrega Rápida</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js" type="module"></script>
+  <script>
+    // Countdown timer
+    function updateCountdown() {
+      const el = document.getElementById('countdown');
+      if (!el) return;
+      
+      let [h, m, s] = el.textContent.split(':').map(Number);
+      s--;
+      if (s < 0) { s = 59; m--; }
+      if (m < 0) { m = 59; h--; }
+      if (h < 0) { h = 23; m = 59; s = 59; }
+      
+      el.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    }
+    setInterval(updateCountdown, 1000);
+
+    // Filter buttons styling
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.style.background = 'rgba(255,255,255,0.05)';
+          b.style.color = '#9ca3af';
+          b.style.border = '1px solid rgba(255,255,255,0.1)';
+          b.classList.remove('active');
+        });
+        this.style.background = 'linear-gradient(135deg, #8b5cf6, #06b6d4)';
+        this.style.color = 'white';
+        this.style.border = 'none';
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
